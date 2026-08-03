@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rayan Zaman</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left panel (20%) */
+.sidebar {
+    width: 20%;
+    background: #f2f2f2;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Photo */
+.photo {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/*
+.photo img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+} */
+
+.photo img {
+    width: 186px;
+    height: 248px;
+    object-fit: cover;
+    border-radius: 0;
+}
+    
+/* Description */
+.description {
+    flex: 1;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.footer {
+    border-top: 1px solid #bbb;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+/* Right panel (80%) */
+.main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    background: #003c7d;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background: #0055aa;
+}
+
+/* Main content */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+}
+
+.content p {
+    line-height: 1.7;
+}
+
+.resume-viewer {
+    width: 100%;
+    height: calc(100vh - 70px);
+    border: none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+
+        <div class="photo">
+            <img src="docs/RMZ_Pic24.png" alt="Profile Photo"><br>
+            <!-- <h2>&nbsp;Rayan Zaman</h2> -->
+            <h2>Rayan M Zaman</h2>
+        </div>
+
+        <div class="description">
+            <p>
+                Student <br>
+                <b>B.S. in Electrical Engineering</b><br>
+                <a href="https://ece.illinois.edu/" target="_blank"><b>ECE Department</b></a><br>
+                <a href="https://illinois.edu/" target="_blank"><b>UIUC</b></a><br><br>
+            </p>
+
+            <br>
+
+            <p>
+                Rayan's interests include digital design, machine learning, and 
+                embedded systems. He is passionate about innovation, problem-solving, 
+                and teamwork, with experience in STEM competitions, technical 
+                communication, and community service.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>2026 | rayanmzaman[@]gmail[.]com</p>
+            <br>
+        </div>
+
+    </div>
+
+    <!-- Right Panel -->
+    <div class="main">
+
+        <!-- Navigation -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <!-- The index.html file serves as the default/landing/home page. -->
+            <a href="projects.html">Projects</a>
+            <a href="quicklinks.html">Quicklinks</a>
+            <!-- <a href="docs/RMZ_CV26.pdf" target="_blank">Resume</a> -->
+            <a href="resume.html"><span style="forn-weight: bold; color: gold;">Resume</span></a>
+        </div>
+
+        <div class="content">
+
+            <iframe
+                class="resume-viewer"
+                src="docs/RMZ_CV26.pdf">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
